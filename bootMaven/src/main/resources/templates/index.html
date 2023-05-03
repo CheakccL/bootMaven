@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="/static/js/jquery/jquery-1.10.2.min.js"></script>
+
+<body>
+    index.html.........
+<button>aaaaa</button>
+</body>
+<script>
+    $(document).ready(function(){
+        alert("213");
+        $("button").click(function(){
+            alert("123");
+            $.getJSON("127.0.0.1:9090/bill/3",function(data,status){
+                alert("数据：" + data + "\n状态：" + status);
+            });
+        });
+    });
+</script>
+</html>
